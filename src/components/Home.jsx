@@ -70,34 +70,32 @@ const Home = ({ ratio }) => {
           <article>
             <p>
               +
-              {ratio < 2 && (
-                <motion.span
-                  whileInView={animationClientCount}
-                  ref={clientCount}
-                ></motion.span>
-              )}
+              <motion.span
+                whileInView={animationClientCount}
+                ref={clientCount}
+              ></motion.span>
             </p>
             <span>Clients Worldwide</span>
           </article>
-          <article>
-            <p>
-              +
-              {ratio < 2 && (
+          <aside>
+            <article>
+              <p>
+                +
                 <motion.span
-                  whileInView={animationProjectsCount}
                   ref={projectCount}
+                  whileInView={animationProjectsCount}
                 >
                   500
                 </motion.span>
-              )}
-            </p>
-            <span>Projects Done</span>
-          </article>
+              </p>
+              <span>Projects Done</span>
+            </article>
 
-          <article data-special>
-            <p>Contact</p>
-            <span>adeshboudh16@gmail.com</span>
-          </article>
+            <article data-special>
+              <p>Contact</p>
+              <span>adeshboudh16@gmail.com</span>
+            </article>
+          </aside>
         </div>
       </section>
       <section>
